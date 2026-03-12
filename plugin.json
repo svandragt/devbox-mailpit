@@ -1,0 +1,12 @@
+{
+  "name": "mailpit",
+  "version": "0.0.1",
+  "description": "Plugin for Mailpit. Configures a Mailpit service with Web UI on port 8025 and SMTP on port 1025.",
+  "env": {
+    "MAILPIT_SMTP_PORT": "1025",
+    "MAILPIT_UI_PORT": "8025"
+  },
+  "create_files": {
+    "{{ .Virtenv }}/process-compose.yaml": "config/process-compose.yaml"
+  }
+}
